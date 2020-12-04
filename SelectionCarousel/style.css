@@ -1,0 +1,40 @@
+.arrow-left:hover, .arrow-right:hover, .arrow-left2:hover, .arrow-right2:hover {
+    opacity: 1.0;
+}
+.arrow-left, .arrow-right, .arrow-left2, .arrow-right2 {
+    opacity: 0.25;
+}
+
+.arrow-left {
+    position: relative;
+    top: -200px;
+    left: 210px;
+}
+.arrow-right {
+    position: relative;
+    top: -200px;
+    left: 440px;
+}
+
+.arrow-left2 {
+    position: relative;
+    top: -200px;
+    left: 210px;
+}
+.arrow-right2 {
+    position: relative;
+    top: -200px;
+    left: 440px;
+}
+
+.carousel1 {
+    padding-left: 200px;
+}
+
+.carousel2 {
+    padding-left: 200px;
+}
+
+.container {
+    padding-left: 150px;
+}

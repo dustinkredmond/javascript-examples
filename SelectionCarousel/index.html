@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="carousel.js" type="application/javascript"></script>
+    <title>SelectionCarousel</title>
+</head>
+<!-- Optional method call, sets 'option' divs other than the first -->
+<!-- to use style='display:none' since we only show one at a time -->
+<body onload="initCarousel()">
+<div class="carousel1">
+    <!-- Inner divs in the carousel must have class=option -->
+    <div class="option"><img class="rounded" src="red.png" alt="Red"></div>
+    <div class="option"><img class="rounded" src="yellow.png" alt="Yellow"></div>
+    <div class="option"><img class="rounded" src="blue.png" alt="Blue"></div>
+</div>
+<!-- To call our next() and prev() functions, must pass class name -->
+<img class="arrow-left" onclick="prev('carousel1')" src="left.png" alt="Previous"/>
+<img class="arrow-right" onclick="next('carousel1')" src="right.png" alt="Next"/>
+
+<!-- We can create multiple per page. Provide a different class name -->
+<div class="carousel2">
+    <div class="option"><img class="rounded" src="blue.png" alt="Blue"></div>
+    <div class="option"><img class="rounded" src="yellow.png" alt="Yellow"></div>
+    <div class="option"><img class="rounded" src="red.png" alt="Red"></div>
+</div>
+<img class="arrow-left2" onclick="prev('carousel2')" src="left.png" alt="Previous"/>
+<img class="arrow-right2" onclick="next('carousel2')" src="right.png" alt="Next"/>
+</body>
+</html>

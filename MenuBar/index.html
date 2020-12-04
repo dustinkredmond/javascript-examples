@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Menu Bar</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+    </style>
+    <script type="application/javascript">
+        function float(float) {
+            let li = document.getElementsByTagName("li");
+            for (let i = 0; i < li.length; i++) {
+                li[i].style.float = float;
+            }
+        }
+    </script>
+</head>
+<body>
+<ul>
+    <li><a class="active">Home</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Contact Us</a></li>
+</ul>
+<br/>
+<input type="button" value="Float Left" onclick="float('left')"/>
+<input type="button" value="Float Right" onclick="float('right')"/>
+</body>
+</html>

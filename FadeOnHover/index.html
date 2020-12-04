@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fade on Hover</title>
+</head>
+<script type="application/javascript">
+    function toggleFade() {
+        let img = document.getElementById("img");
+        if (img.style.opacity === "1.0") {
+            img.style.opacity = "0.5";
+        } else if (img.style.opacity === "0.5") {
+            img.style.opacity = "1.0";
+        } else {
+            // image initial opacity
+            img.style.opacity = "0.5";
+        }
+    }
+</script>
+<style>
+    img:hover {
+        opacity: 0.5;
+    }
+</style>
+<body>
+<strong>Image will fade on mouse hover or button press</strong>
+<br/>
+<img id="img" src="house.jpg" alt="House" width="200" height="200"/>
+<br/>
+<input type="button" onclick="toggleFade()" value="Toggle Fade"/>
+</body>
+</html>
